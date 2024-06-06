@@ -1,51 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Notifications page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <main class="main">
+      <section id="header" class="section" role="header">
+        <div class="header__container">
+          <h1 class="header__title">
+            Notifications<span class="count">3</span>
+          </h1>
+          <button type="button" class="btn">Mark all as read</button>
+        </div>
+      </section>
+      <section id="notification" class="section">
+        <div class="notification__container">
+          <article class="notification__card notification__card--unread">
+            <figure class="column__left">
+              <img
+                class="notification__avatar"
+                src="./assets/images/avatar-mark-webber.webp"
+                alt="Mark Webber"
+              />
+            </figure>
+            <div class="column__right">
+              <p class="notification__status">
+                <a class="notification__user" href="/">Mark Webber</a>
+                reacted to your recent post
+                <a class="post" href="/">My first tournament today!</a
+                ><span class="dot active"></span>
+              </p>
+              <p class="notification__date">1m ago</p>
+            </div>
+          </article>
+          <article class="notification__card notification__card--unread">
+            <figure class="column__left">
+              <img
+                class="notification__avatar"
+                src="./assets/images/avatar-angela-gray.webp"
+                alt="Angela Gray"
+              />
+            </figure>
+            <div class="column__right">
+              <p class="notification__status">
+                <a class="notification__user" href="/">Angela Gray</a>
+                followed you<span class="dot active"></span>
+              </p>
+              <p class="notification__date">5m ago</p>
+            </div>
+          </article>
+          <article class="notification__card notification__card--unread">
+            <figure class="column__left">
+              <img
+                class="notification__avatar"
+                src="./assets/images/avatar-jacob-thompson.webp"
+                alt="Jacob Thompson"
+              />
+            </figure>
+            <div class="column__right">
+              <p class="notification__status">
+                <a class="notification__user" href="/">Jacob Thompson</a> has
+                joined your group <a class="group" href="/">Chess Club</a
+                ><span class="dot active"></span>
+              </p>
+              <p class="notification__date">1 day ago</p>
+            </div>
+          </article>
+          <article class="notification__card">
+            <figure class="column__left">
+              <img
+                class="notification__avatar"
+                src="./assets/images/avatar-rizky-hasanuddin.webp"
+                alt="Rizky Hasanuddin"
+              />
+            </figure>
+            <div class="column__right">
+              <p class="notification__status">
+                <a class="notification__user" href="/">Rizky Hasanuddin</a>
+                sent you a private message<span class="dot"></span>
+              </p>
+              <p class="notification__date">5 days ago</p>
+              <blockquote>
+                <p>
+                  Hello, thanks for setting up the Chess Club. I've been a
+                  member for a few weeks now and I'm already having lots of fun
+                  and improving my game.
+                </p>
+              </blockquote>
+            </div>
+          </article>
+          <article class="notification__card">
+            <figure class="column__left">
+              <img
+                class="notification__avatar"
+                src="./assets/images/avatar-kimberly-smith.webp"
+                alt="Kimberly Smith"
+              />
+            </figure>
+            <div class="column__right">
+              <p class="notification__status">
+                <a class="notification__user" href="/">Kimberly Smith</a>
+                commented on your picture<span class="dot"></span>
+              </p>
+              <p class="notification__date">1 week ago</p>
+            </div>
+            <figure class="picture">
+              <img src="./assets/images/image-chess.webp" alt="Chess image" />
+            </figure>
+          </article>
+          <article class="notification__card">
+            <figure class="column__left">
+              <img
+                class="notification__avatar"
+                src="./assets/images/avatar-nathan-peterson.webp"
+                alt="Nathan Peterson"
+              />
+            </figure>
+            <div class="column__right">
+              <p class="notification__status">
+                <a class="notification__user" href="/">Nathan Peterson</a>
+                reacted to your recent post
+                <a class="post" href="/"
+                  >5 end-game strategies to increase your win rate</a
+                ><span class="dot"></span>
+              </p>
+              <p class="notification__date">2 weeks ago</p>
+            </div>
+          </article>
+          <article class="notification__card">
+            <figure class="column__left">
+              <img
+                class="notification__avatar"
+                src="./assets/images/avatar-anna-kim.webp"
+                alt="Anna Kim"
+              />
+            </figure>
+            <div class="column__right">
+              <p class="notification__status">
+                <a class="notification__user" href="/">Anna Kim</a> left the
+                group <a class="group" href="/">Chess Club</a
+                ><span class="dot"></span>
+              </p>
+              <p class="notification__date">2 weeks ago</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <footer class="footer">
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Stacy</a>.
+        </p>
+      </footer>
+    </main>
 
-  Notifications 3
-
-  Mark all as read
-
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
-
-  Angela Gray followed you
-  5m ago
-
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
-
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
-
-  Kimberly Smith commented on your picture
-  1 week ago
-
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
