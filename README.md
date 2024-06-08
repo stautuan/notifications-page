@@ -20,6 +20,7 @@ Users should be able to:
 ### Built with
 
 ```
+- JavaScript
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
