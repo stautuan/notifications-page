@@ -13,7 +13,7 @@ Users should be able to:
 
 ## Preview
 
-<img src="./assets/images/preview.png" height="500" style="border-radius:10px;margin-bottom:1rem;" />
+<img src="./assets/images/preview.png" width="500" style="border-radius:10px;margin-bottom:1rem;" />
 
 [Demo](https://stautuan.github.io/notifications-page/)
 
