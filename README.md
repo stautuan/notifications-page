@@ -15,7 +15,7 @@ Users should be able to:
 
 <img src="./assets/images/notification-page.png" height="500" style="border-radius:10px;margin-bottom:1rem;" />
 
-[Demo](https://stautuan.github.io/notifications-page/)
+[Demo](https://stautuan.github.io/preview.png)
 
 ### Built with
 

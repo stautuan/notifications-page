@@ -253,6 +253,7 @@ blockquote:hover {
 .attribution {
   font-size: 1.1rem;
   text-align: center;
+  width: 100%;
   position: fixed;
   bottom: 0;
   left: 50%;
