@@ -151,8 +151,9 @@ blockquote:hover {
   display: flex;
   align-items: center;
   gap: 1rem;
+  font-size: 2.4rem;
   color: var(--clr-gray-6);
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .heading__title span {
